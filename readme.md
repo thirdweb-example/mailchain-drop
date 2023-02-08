@@ -1,35 +1,29 @@
+# Notify drop claimers using Mailchain
+
+This repository represents a Next.js application that allows users to claim an NFT drop and get notified about further drop details through Mailchain.
+
+This repository is associated with [our guide on thirdweb blog](https://blog.thirdweb.com/guides/notify-drop-claimers-using-mailchain/).
+
 ## Getting Started
 
-Create a project using this example:
+Follow the guide linked above to deploy the contracts through [thirdweb dashboard](https://thirdweb.com/dashboard).
 
-```bash
-npx thirdweb create --template next-javascript-starter
+Now, install the dependencies:
+
+```shell
+npm install
 ```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Then, set the environment variables:
 
-On `pages/_app.js`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our [hooks](https://portal.thirdweb.com/react) and
-[UI Components](https://portal.thirdweb.com/ui-components) to work.
-
-### Deploy to IPFS
-
-Deploy a copy of your application to IPFS using the following command:
-
-```bash
-yarn deploy
+```env
+SECRET_RECOVERY_PHRASE=(phrase here)
 ```
 
-## Learn More
+Finally, run the development server:
 
-To learn more about thirdweb and Next.js, take a look at the following resources:
+```shell
+yarn dev
+```
 
-- [thirdweb React Documentation](https://docs.thirdweb.com/react) - learn about our React SDK.
-- [thirdweb JavaScript Documentation](https://docs.thirdweb.com/react) - learn about our JavaScript/TypeScript SDK.
-- [thirdweb Portal](https://docs.thirdweb.com/react) - check our guides and development resources.
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-
-You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+This should have start your Next.js app.
